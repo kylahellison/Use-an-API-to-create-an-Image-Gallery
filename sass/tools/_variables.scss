@@ -1,0 +1,47 @@
+//COLOR PALETTE
+$white: #eeebd9;
+$bg-color: #42275a;  
+$black-window: rgba(0, 0, 0, 0.3);
+$img-border: #000;
+$form-bg: #2b303b;
+$purple: #42275a;
+
+//GRADIENTS
+$lightbox-bg: -webkit-linear-gradient(to right, rgba(115, 75, 109, 0.2), rgba(66, 39, 90, 0.4));  /* Chrome 10-25, Safari 5.1-6 */
+$lightbox-bg2: linear-gradient(to right, rgba(115, 75, 109, 0.2), rgba(66, 39, 90, 0.4)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+//BOX SHADOWS
+$img-box-shadow: 4px 4px 2px $white;
+$h1-box-shadow: 2px 2px 6px rgba(255, 255, 255, 1);
+$search-hover: inset 0 0 0 5px $img-border;
+
+//BORDERS
+$button-border: 2px solid $purple;
+$button-border-hover: 2px solid $white;
+ 
+//BODY BACKGROUND
+$bg-image: url("../images/dark-light-dots.jpg");
+
+//WHITE SPACE
+$padding: 15px;
+$gen-margin: 10px; 
+
+//FONT STACKS
+$header-font: 'Bree Serif', serif;
+$body-font: 'Open Sans', sans-serif;
+
+//FONT SIZES
+$h1-size: 2em;
+$h2-size: 1.4em;
+$phone-p: 0.9em;
+$p-size: 1.2em;
+$span-size: 0.8em;
+
+//MEDIA QUERIES
+$phone-width: 320px;
+$l-phone-width: 420px;
+$tablet-width: 720px; 
+
+
+
+

@@ -1,0 +1,41 @@
+@mixin typography($family, $color, $align, $size) {
+	font-family: $family;
+	color: $color;
+	text-align: $align; 
+	font-size: $size;
+}
+
+@mixin field($height, $width, $background, $border, $color, $p-left) {
+	height: $height;
+	width: $width;
+	background: $background;
+	border: $border;
+	color: $color;
+	padding-left: $p-left;
+}
+ 
+@mixin buttonstyle($height, $width, $background, $border, $color, $padding) {
+	height: $height;
+	width: $width;
+	background: $background;
+	border: $border;
+	color: $color;
+	padding: $padding;
+}
+
+@mixin dims($height, $width) {
+	height: $height;
+	width: $width;  
+}
+
+@mixin breakpoint($point) {
+	@if $point == phone {
+		@media only screen and (min-width: #{$phone-width}) { @content; }
+	}
+	@if $point == lphone {
+		@media only screen and (min-width: #{$l-phone-width}) { @content; }
+	}
+	@else if $point == tablet {
+		@media only screen and (min-width: #{$tablet-width}) { @content; }
+	}
+}

@@ -1,0 +1,42 @@
+/*========================================
+=            GENERAL           =
+========================================*/
+
+h1 {
+	@include typography($header-font, $white, center, $h2-size);
+
+	@include breakpoint(lphone) {
+		text-align: right;
+		font-size: $h1-size;
+	}
+}
+
+h2 {
+	@include typography($header-font, $white, center, $h2-size);
+}
+
+p {
+	@include typography($body-font, $white, center, $phone-p);
+
+	@include breakpoint (lphone) {
+		font-size: $p-size;
+	}
+}
+
+span {
+	@include typography($body-font, $white, center, $span-size);
+}
+
+/*========================================
+=            SPECIFICS            =
+========================================*/
+
+.top span a {
+	text-decoration: none;
+	color: $white;
+	transition: color 0.5s;
+}
+
+.top span a:hover {
+	color: $purple;
+}

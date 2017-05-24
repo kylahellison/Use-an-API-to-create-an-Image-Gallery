@@ -1,0 +1,55 @@
+/*========================================
+=            REUSABLE CLASSES            =
+========================================*/
+
+.flex {
+	display: flex;	
+}
+
+.column {
+	flex-direction: column;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.center-justify {
+	justify-content: center;
+}
+
+.center-align {
+	align-items: center;
+}
+
+.end {
+	align-self: flex-end;	
+}
+
+.space-between {
+	justify-content: space-between;
+} 
+
+.space-around {
+	justify-content: space-around;	
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+/*=================================
+=            SPECIFICS            =
+=================================*/
+
+body {
+	flex: 1; //need this for sticky footer!
+}
+
+.h1-container,
+.header-items {
+	justify-content: center;
+	@include breakpoint(tablet) {
+		align-self: flex-end;		
+	}
+}

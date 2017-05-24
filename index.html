@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Responsive Lightbox with AJAX Content">
+	<title>Spotify API Album Gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/application.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet">
+	<script src="https://use.fontawesome.com/686130ee2d.js"></script>
+	</head>
+ 
+	<body class="flex column space-between">
+
+		<div id="wrapper" class="flex column">
+
+			<div class="heading flex column">
+				<div class="header-items flex center-align row">
+					<div class="diamond center-align end"></div>
+					<div class="h1-container flex column center-align">
+						<h1>Spotify Album Gallery</h1>
+					</div>
+				</div>
+				<div class="p-wrap">
+					<p>Enter the name of an artist or album and click the search button</p>
+				</div>
+				<div class="box flex center-justify">
+					<div class="container-1 flex center-justify">
+						<form class="flex">
+							<input type="search" id="search" value=""><div class="icon"><i class="fa fa-search"></i></div>
+		  					<input type="submit" id="submit" value="search">
+						</form>
+					</div>
+				</div>
+			</div>
+
+				<div class="button-box flex center-justify">
+					<button id="sort">Sort Alphabetically</button>
+				</div>
+
+			<div id="wrap-margin">
+
+					<div class="album-wrap flex column" id="albums">
+					</div>
+
+			</div>
+
+		</div>
+
+		<footer class="flex space-between center-align">
+			<div class="copywrite">
+				<span>&copy; Kylah Ellison 2017</span>
+			</div>
+			<div class="top" id="top">
+				<span><a href="#">Back to Top</a></span>
+			</div>
+		</footer>
+
+	<script src="js/jquery-3.2.0.min.js" type="text/javascript"></script>
+
+
+	<script src="js/tinysort.js" type="text/javascript"></script>
+
+	<script src="js/jquery.tinysort.js" type="text/javascript"></script>
+
+	<script src="js/lightbox.js" type="text/javascript"></script>
+
+	<script src="js/script.js" type="text/javascript"></script>
+
+
+
+
+	</body>
+</html>

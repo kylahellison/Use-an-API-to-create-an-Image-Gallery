@@ -1,0 +1,281 @@
+/* Chrome 10-25, Safari 5.1-6 */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.container-1 input#search, .container-1 input#submit, #sort {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+/*========================================
+=            GENERAL           =
+========================================*/
+h1 {
+  font-family: "Bree Serif", serif;
+  color: #eeebd9;
+  text-align: center;
+  font-size: 1.4em; }
+  @media only screen and (min-width: 420px) {
+    h1 {
+      text-align: right;
+      font-size: 2em; } }
+
+h2 {
+  font-family: "Bree Serif", serif;
+  color: #eeebd9;
+  text-align: center;
+  font-size: 1.4em; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #eeebd9;
+  text-align: center;
+  font-size: 0.9em; }
+  @media only screen and (min-width: 420px) {
+    p {
+      font-size: 1.2em; } }
+
+span {
+  font-family: "Open Sans", sans-serif;
+  color: #eeebd9;
+  text-align: center;
+  font-size: 0.8em; }
+
+/*========================================
+=            SPECIFICS            =
+========================================*/
+.top span a {
+  text-decoration: none;
+  color: #eeebd9;
+  transition: color 0.5s; }
+
+.top span a:hover {
+  color: #42275a; }
+
+/*===============================
+=            GENERAL            =
+===============================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  background: url("../images/dark-light-dots.jpg"), #42275a;
+  min-height: 100%; }
+
+#wrapper {
+  min-height: 100%; }
+
+footer {
+  margin-top: auto;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/*=====  End of GENERAL  ======*/
+/*==============================
+=            HEADER            =
+==============================*/
+.h1-container {
+  margin: 10px;
+  margin-left: -15px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 6px white; }
+  @media only screen and (min-width: 420px) {
+    .h1-container {
+      width: 355px; } }
+
+.header-items {
+  margin-top: 15px; }
+
+.diamond {
+  height: 40px;
+  width: 40px;
+  background-color: #42275a;
+  transform: rotate(45deg);
+  z-index: -1;
+  border: 4px double #000;
+  position: relative;
+  top: -30px; }
+  @media only screen and (min-width: 420px) {
+    .diamond {
+      height: 50px;
+      width: 50px;
+      top: -15px; } }
+
+.p-wrap {
+  margin: 60px auto 0;
+  max-width: 250px; }
+  @media only screen and (min-width: 420px) {
+    .p-wrap {
+      max-width: 400px; } }
+  @media only screen and (min-width: 720px) {
+    .p-wrap {
+      max-width: 600px; } }
+
+/*=====  End of HEADER  ======*/
+/*=================================
+=            SEARCHBOX            =
+=================================*/
+.icon {
+  display: inline-block;
+  position: relative;
+  right: 40px;
+  top: 6px;
+  font-size: 30px; }
+
+#submit {
+  cursor: pointer; }
+
+.box {
+  margin: 60px auto 35px;
+  width: 100%; }
+
+/*styling the container for the search box*/
+.container-1 {
+  vertical-align: middle;
+  white-space: nowrap; }
+
+.container-1 input#search {
+  height: 50px;
+  width: 150px;
+  background: #2b303b;
+  border: none;
+  color: #eeebd9;
+  padding-left: 10px; }
+  @media only screen and (min-width: 420px) {
+    .container-1 input#search {
+      width: 260px;
+      padding-left: 30px; } }
+  @media only screen and (min-width: 720px) {
+    .container-1 input#search {
+      width: 300px; } }
+
+.container-1 input#submit {
+  height: 50px;
+  width: 80px;
+  background: #2b303b;
+  border: none;
+  color: #eeebd9;
+  padding-left: 4px;
+  transition: box-shadow 0.5s; }
+
+.container-1 input#submit:hover {
+  box-shadow: inset 0 0 0 5px #000; }
+
+.button-box {
+  margin-bottom: 30px; }
+
+#sort {
+  height: 50px;
+  width: 180px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #42275a;
+  color: #eeebd9;
+  padding: 15px;
+  display: none;
+  transition: border 0.5s; }
+
+#sort:hover {
+  border: 2px solid #eeebd9; }
+
+/*=====  End of SEARCHBOX  ======*/
+/*====================================
+=            GALLERY CODE            =
+====================================*/
+#wrap-margin {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: -webkit-linear-gradient(to right, rgba(115, 75, 109, 0.2), rgba(66, 39, 90, 0.4));
+  background: linear-gradient(to right, rgba(115, 75, 109, 0.2), rgba(66, 39, 90, 0.4));
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 40px; }
+
+#album-wrap {
+  margin-bottom: 15px;
+  margin-top: 10px; }
+
+#artist-name {
+  text-align: center; }
+
+#album-wrap li {
+  list-style-type: none; }
+
+.img {
+  border: 5px solid #000;
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: box-shadow 1s; }
+  @media only screen and (min-width: 420px) {
+    .img {
+      height: 300px;
+      width: 300px; } }
+  @media only screen and (min-width: 720px) {
+    .img {
+      margin: 5px; } }
+
+.img:hover {
+  box-shadow: 4px 4px 2px #eeebd9; }
+
+.top {
+  display: none;
+  border: 2px dotted #42275a;
+  padding: 5px;
+  transition: border 0.5s; }
+
+.top:hover {
+  border: 2px dotted #eeebd9; }
+
+/*=====  End of GALLERY CODE  ======*/
+/*========================================
+=            REUSABLE CLASSES            =
+========================================*/
+.flex {
+  display: flex; }
+
+.column {
+  flex-direction: column; }
+
+.row {
+  flex-direction: row; }
+
+.center-justify {
+  justify-content: center; }
+
+.center-align {
+  align-items: center; }
+
+.end {
+  align-self: flex-end; }
+
+.space-between {
+  justify-content: space-between; }
+
+.space-around {
+  justify-content: space-around; }
+
+.wrap {
+  flex-wrap: wrap; }
+
+/*=================================
+=            SPECIFICS            =
+=================================*/
+body {
+  flex: 1; }
+
+.h1-container,
+.header-items {
+  justify-content: center; }
+  @media only screen and (min-width: 720px) {
+    .h1-container,
+    .header-items {
+      align-self: flex-end; } }
+
+/*# sourceMappingURL=application.css.map */

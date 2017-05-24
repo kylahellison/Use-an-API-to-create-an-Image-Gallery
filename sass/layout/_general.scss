@@ -1,0 +1,214 @@
+/*===============================
+=            GENERAL            =
+===============================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%; //need this for sticky footer!
+}
+
+body {
+	background:  $bg-image, $bg-color;
+	min-height: 100%; //need this for sticky footer!
+} 
+
+#wrapper {
+	min-height: 100%;
+}
+
+footer {
+	margin-top: auto; //need this for sticky footer!
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*=====  End of GENERAL  ======*/
+
+
+/*==============================
+=            HEADER            =
+==============================*/
+
+.h1-container {
+	margin: $gen-margin;
+	margin-left: -15px;
+	width: 200px;
+	border-radius: 20px;
+	padding: 10px;
+	background: $black-window;
+	box-shadow: $h1-box-shadow;
+
+	@include breakpoint(lphone) {
+		width: 355px;		
+	}
+}
+
+.header-items {
+	margin-top: 15px;
+}
+
+.diamond {
+  @include dims(40px, 40px);
+  background-color: $purple;
+  transform: rotate(45deg);
+  z-index: -1;
+  border: 4px double $img-border;
+  position: relative;
+  top: -30px;
+
+  @include breakpoint(lphone) {
+  	@include dims(50px, 50px);
+    top: -15px;	
+  }
+} 
+
+.p-wrap {
+	margin: 60px auto 0;
+	max-width: 250px;
+	@include breakpoint(lphone) {
+		max-width: 400px;
+	}
+	@include breakpoint(tablet) {
+		max-width: 600px;
+	}
+}
+
+
+/*=====  End of HEADER  ======*/
+
+
+/*=================================
+=            SEARCHBOX            =
+=================================*/
+
+.icon {
+  display: inline-block;
+  position: relative;
+  right: 40px;
+  top: 6px;
+  font-size: 30px;
+}
+
+#submit {
+	cursor: pointer;
+}
+
+.box {
+	margin: 60px auto 35px;
+	width: 100%;
+}
+
+/*styling the container for the search box*/
+
+.container-1 {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.container-1 input#search {
+  	@include field(50px, 150px, $form-bg, none, $white, 10px);
+	@extend %border-radius;
+
+	@include breakpoint(lphone) {
+		width: 260px;
+		padding-left: 30px;
+	}
+
+	@include breakpoint(tablet) {
+		width: 300px;
+	}
+}
+
+.container-1 input#submit {
+  	@include field(50px, 80px, $form-bg, none, $white, 4px);
+	@extend %border-radius;
+	transition: box-shadow 0.5s;
+}
+
+.container-1 input#submit:hover {
+	box-shadow: $search-hover;
+}
+
+.button-box {
+	margin-bottom: 30px;
+}
+
+#sort {
+  	@include buttonstyle(50px, 180px, $black-window, $button-border, $white, $padding);
+	@extend %border-radius;
+    display: none;
+    transition: border 0.5s;
+}
+
+#sort:hover {
+	border: $button-border-hover;
+}
+
+/*=====  End of SEARCHBOX  ======*/
+
+
+
+/*====================================
+=            GALLERY CODE            =
+====================================*/
+
+
+#wrap-margin {
+	padding-top: $padding;
+	padding-bottom: $padding;
+	background: $lightbox-bg;
+	background: $lightbox-bg2;
+	display: none;
+	margin-top: $gen-margin;
+	margin-bottom: 40px;
+}
+
+#album-wrap {
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+#artist-name {
+	text-align: center;
+}
+
+#album-wrap li {
+	list-style-type: none;
+}
+
+.img {
+	border: 5px solid $img-border;	
+	@include dims(200px, 200px);
+	margin-top: $gen-margin;
+	margin-bottom: $gen-margin;
+	transition: box-shadow 1s;
+
+	@include breakpoint(lphone) {
+		@include dims(300px, 300px);
+	}
+	@include breakpoint(tablet) {
+		margin: 5px;
+	}
+}
+
+.img:hover {
+	box-shadow: $img-box-shadow;	
+}
+
+.top {
+	display: none;
+	border: 2px dotted $purple;
+	padding: 5px;
+	transition: border 0.5s;
+}
+
+.top:hover {
+	border: 2px dotted $white;
+}
+
+/*=====  End of GALLERY CODE  ======*/
